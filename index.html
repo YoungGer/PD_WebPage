@@ -1,50 +1,312 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>PD WebPage</title>
-	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/mycss.css">
-</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>410实验室官方主页</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
 <body>
 
+	<!-- 导航栏 -->
+	<nav  class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img style="padding:0px;margin:0px;position:relative;top:-10px;" src="picture/hust.png" alt="华中科技大学" width="60" height="50"></a>
+			</div>
 
-	 <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">
+							<span class="glyphicon glyphicon-home"></span> 主页
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-user"></span> 关于我们</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<span class="glyphicon glyphicon-flash"></span> 局部放电
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Action</a>
+							</li>
+							<li>
+								<a href="#">Another action</a>
+							</li>
+							<li>
+								<a href="#">Something else here</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="#">Separated link</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="#">One more separated link</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-earphone"></span> 联系我们</a>
+					</li>
+				</ul>
+
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a data-toggle="modal" data-target="#loginModal">
+							<span class="glyphicon glyphicon-log-in"></span>
+							登录
+						</a>
+					</li>
+				</ul>
+
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<!-- header -->
+	<header class="jumbotron">
+        <!-- Main component for a primary marketing message or call to action -->
+
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>410局部放电实验室</h1>
+                    <p style="padding:40px;"></p>
+                    <p>本实验室承担宇宙顶尖项目，非常的吊啊！<br>
+                    实验室现已有973首席科学家1名，千人计划2名，长江学者2名。</p>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <p style="padding:20px;"></p>
+                    <img src="" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <p style="padding:40px;"></p>
+                    <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reserveModal">预约讲座</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    </header>
 
+
+
+	<!-- 内容部分 -->
     <div class="container">
+        
+        <div class="row row-content">
+            <div class="col-xs-12">
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive" src="picture/pd1.jpg" alt="Uthappizza" >
+                            <div class="carousel-caption">
+                                <h2 class="media-heading">局放危害1 
+                                </h2>
+                                <p>很严重1</p>
+                                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive"  src="picture/pd2.jpg" alt="Uthappizza" >
+                            <div class="carousel-caption">
+                                <h2 class="media-heading">局放危害2
+                        </h2>
+                        <p>很严重2</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive"  src="picture/pd3.jpg" alt="Alberto Somayya"  >
+                            <div class="carousel-caption">
+                                <h2 class="media-heading">局放危害3</h2>
+                                <p>很严重3
+                                 </p>
+                                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
 
-    </div><!-- /.container -->
+            </div>
+        </div>
+
+		<div>
+			<p style="padding:20px;"></p>
+			<hr>
+			<p style="padding:20px;"></p>
+		</div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>973首席科学家</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="picture/bjy.jpg" alt="Uthappizza">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">白俊杨
+                        </h2>
+                        <p>发表SCI1000篇</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div>
+			<p style="padding:20px;"></p>
+		</div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+                <h3 align=center>国家千人计划</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="media-heading">邓迪元
+                        </h2>
+                        <p>获得专利1000项</p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                    <div class="media-right media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="picture/ddy.png" alt="Uthappizza">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div>
+			<p style="padding:20px;"></p>
+		</div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>国家长江学者</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                        <img class="media-object img-thumbnail"
+                         src="picture/xl.jpg" alt="Alberto Somayya">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">熊磊</h2>
+                        <p>累计科研经费1000亿
+                         </p>
+                        <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+    </div>
 
 
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="./bootstrap/js/jquery.min.js"></script>
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<!-- 尾巴部分 -->
+	<footer>
+        <div class="container">
+            <div class="row rowfooter">             
+                <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">主页</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">局部放电</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                    <h5>通讯地址</h5>
+                    <address>
+		              中国湖北省武汉书<br>
+		              华中科技大学电气学院<br>
+		              410宇宙重点实验室<br>
+		            <i class="fa fa-phone"></i>: +852 1234 5678<br>
+                    <i class="fa fa-fax"></i>: +852 8765 4321<br>
+                    <i class="fa fa-envelope"></i>: 
+                    <a href="mailto:confusion@food.net">confusion@food.net</a>
+		            </address>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center>© Copyright 2015 410宇宙重点实验室</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<!-- <script src="js/jquery.min.js"></script> -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

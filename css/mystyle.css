@@ -1,0 +1,28 @@
+.navbar-default {
+	padding: 6px;
+}
+
+.jumbotron {
+	padding-top: 100px;
+}
+
+.carousel img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-height: 400px;
+}
+
+.carousel h2, .carousel p {
+	color :white;
+}
+
+.media img {
+	max-height: 200px;
+}
+
+.rowfooter{
+    background-color: #AfAfAf;
+    margin:0px auto;
+    padding: 100px 0px 20px 0px;
+}
